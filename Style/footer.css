@@ -158,9 +158,15 @@ footer .container-wrap {
     justify-content: center;
 }
 
-.footer-second-line .footer-logo img {
-    width: auto;
-    height: 40px;
+.footer-second-line .footer-logo svg {
+    width: auto !important;
+    height: 40px !important;
+}
+
+.footer-second-line .footer-logo svg>path {
+    width: 100% !important;
+    height: 100% !important;
+    fill: #fff;
 }
 
 .footer-second-line  .footer-second-line-text {
