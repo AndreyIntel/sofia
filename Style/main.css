@@ -9,3 +9,10 @@ body {
     font-family: Raleway,sans-serif;
     font-display: swap;
 }
+
+.container-wrap {
+    position: relative;
+    width: 1300px;
+    max-width: 1300px;
+    
+}
