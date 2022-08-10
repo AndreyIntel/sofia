@@ -74,8 +74,24 @@ header {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu>li {
+    position: relative;
+}
+
+.nav-menu>li>a svg {
+    width: 14px;
+    height: 14px;
 }
 
 .nav-menu>li>a:hover {
     color: #4a3e5a;
+}
+
+.nav-menu>li>a:hover svg {
+    fill: #4a3e5a;
 }
