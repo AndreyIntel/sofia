@@ -4,13 +4,19 @@ header {
     left: 0;
     width: 100%;
     max-width: 100%;
-    height: 60px;
-    max-height: 60px;
+    height: 81px;
+    max-height: 81px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 5;
     background-color: #fff;
+    transition: 0.3s all ease;
+}
+
+.is-sticky {
+    height: 60px;
+    max-height: 60px;
 }
 
 header>.container-wrap {
@@ -34,11 +40,19 @@ header>.container-wrap {
     align-items: center;
     height: 100%;
     max-height: 100%;
+    width: 160px;
+    max-width: 160px;
 }
 
 .header-logo a {
     text-decoration: none;
     outline: 0;
+}
+
+.is-sticky .header-logo img {
+    width: 145px;
+    height: 54px;
+    transition: 0.3s all ease;
 }
 
 .header-phone {
