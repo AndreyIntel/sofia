@@ -236,8 +236,8 @@ header>.container-wrap {
 
 @media (max-width: 1200px) {
     header {
-        height: auto;
-        max-height: none;
+        height: 57px;
+        max-height: 57px;
     }
 
     .mobile-btn {
