@@ -66,9 +66,12 @@ header>.container-wrap {
     width: auto;
 }
 
-.header-phone span {
+.header-phone span,
+.header-phone span a {
     font-family: monospace;
     font-size: 18px;
+    color: #000;
+    text-decoration: none;
 }
 
 .header-wrap nav {
@@ -225,25 +228,33 @@ header>.container-wrap {
 }
 
 
-.nav-menu>li>input {
+.nav-menu>li>input,
+.nav-menu>li>ul>li>input {
     position: absolute;
     height: 0;
     width: 0;
     visibility: hidden;
 }
 
-.nav-menu>li>label {
-    display: flex;
+.nav-menu>li>label,
+.nav-menu>li>ul>li>label  {
+    display: none;
     align-items: center;
     width: 25px;
 }
 
-.nav-menu>li>label svg {
+.nav-menu>li>label svg,
+.nav-menu>li>ul>li>label svg {
     height: 15px;
     width: auto;
     transition: all ease .3s;
     transform: rotate(-90deg);
 }
+
+.mobile-menu-active {
+    overflow: hidden;
+}
+
 
 /* mobile part */
 
@@ -297,30 +308,49 @@ header>.container-wrap {
         gap: 0;
         padding-left: 10px;
         padding-right: 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: calc(100vh - 150px);
+        max-width: 100%;
     }
 
-    .nav-menu>li {
+    .nav-menu>li,
+    .nav-menu>li>ul>li {
         width: 100%;
         max-width: 100%;
         border-bottom: 1px solid #eaeaea;
         flex-wrap: wrap;
     }
 
-    .nav-menu>li>a {
+    .nav-menu>li>a,
+    .nav-menu>li>ul>li>a {
         padding: 10px 0;
         font-size: 14px;
         width: calc(100% - 25px);
+        text-transform: inherit;
+    }
+
+    .nav-menu>li>ul>li>a {
+        padding: 5px;
+        width: calc(100% - 35px - 27px);
     }
 
     .nav-menu>li>a svg {
         display: none;
     }
 
-    .nav-menu>li>input:checked~label svg {
+    .nav-menu>li>label,
+    .nav-menu>li>ul>li label{
+        display: flex;
+    }
+
+    .nav-menu>li>input:checked~label svg,
+    .nav-menu>li>ul>li>input:checked~label svg {
         transform: rotate(0deg);
     }
 
-    .nav-menu>li>ul {
+    .nav-menu>li>ul,
+    .nav-menu>li>ul>li>ul {
         position: relative;
         width: 100%;
         max-width: 100%;
@@ -328,10 +358,34 @@ header>.container-wrap {
         visibility: visible;
         padding-top: 0;
         display: none;
+        padding-bottom: 0;
+        left: auto;
     }
 
-    .nav-menu>li>input:checked~ul {
+    .nav-menu>li>ul>li {
+        border-bottom: 1px solid #eaeaea;
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 27px;
+    }
+
+    .nav-menu>li>ul>li>ul>li {
+        border-bottom: 1px solid #eaeaea;
+        padding: 5px 27px;
+    }
+
+    .nav-menu>li>ul>li:last-child {
+        border-bottom: none
+    }
+
+    .nav-menu>li>input:checked~ul,
+    .nav-menu>li>ul>li>input:checked~ul {
+        display: flex;
+    }
+
+    .sub-menu-arrow {
+        display: none;
     }
 
     #burger-btn:checked~nav {

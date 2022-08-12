@@ -6,3 +6,8 @@ window.addEventListener("scroll", function() {
         else navArea.classList.remove("is-sticky");
     }
 });
+
+let statusMobileMenu = function(value) {
+    if (value) document.body.classList.add('mobile-menu-active');
+    else document.body.classList.remove('mobile-menu-active');
+}
