@@ -54,11 +54,17 @@ header>.container-wrap {
     transition: 0.3s all ease;
 }
 
-.header-phone {
+.header-phone,
+.header-phone-wrap {
     position: relative;
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.header-phone-mobile-wrap {
+    position: relative;
+    display: none;
 }
 
 .header-phone svg {
@@ -67,11 +73,15 @@ header>.container-wrap {
 }
 
 .header-phone span,
-.header-phone span a {
+.header-phone a {
     font-family: monospace;
     font-size: 18px;
     color: #000;
     text-decoration: none;
+}
+
+.header-phone-mobile-wrap a {
+    font-size: 14px;
 }
 
 .header-wrap nav {
@@ -220,6 +230,8 @@ header>.container-wrap {
 #burger-btn {
     position: absolute;
     visibility: hidden;
+    width: 0;
+    height: 0;
 }
 
 .mobile-btn svg {
@@ -269,6 +281,10 @@ header>.container-wrap {
     header {
         height: 57px;
         max-height: 57px;
+    }
+
+    .header-phone-mobile-wrap {
+        display: block;
     }
 
     .mobile-btn {
@@ -391,5 +407,24 @@ header>.container-wrap {
     #burger-btn:checked~nav {
         height: auto;
         overflow: visible;
+    }
+}
+
+@media (max-width: 850px) {
+
+    header {
+        height: 89px;
+        max-height: 89px;
+    }
+
+    .header-wrap {
+        gap: 0px;
+    }
+
+    .header-phone  {
+        position: relative;
+        top: auto;
+        transform: none;
+        padding-bottom: 10px;
     }
 }
