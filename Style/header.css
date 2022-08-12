@@ -428,3 +428,14 @@ header>.container-wrap {
         padding-bottom: 10px;
     }
 }
+
+@media (max-width: 385px) {
+    header {
+        height: 113px;
+        max-height: 113px;
+    }
+
+    .header-phone {
+        flex-direction: column;
+    }
+}

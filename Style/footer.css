@@ -212,6 +212,10 @@ footer {
         max-width: none;
     }
 
+    .footer-second-line .footer-second-line-text span {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 500px) {
