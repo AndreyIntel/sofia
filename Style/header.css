@@ -11,6 +11,7 @@ header {
     justify-content: center;
     z-index: 5;
     background-color: #fff;
+    transition: all ease .3s;
 }
 
 .is-sticky {
@@ -48,7 +49,12 @@ header>.container-wrap {
     outline: 0;
 }
 
-.is-sticky .header-logo img {
+.header-logo svg {
+    width: 159px;
+    height: 59px;
+}
+
+.is-sticky .header-logo svg {
     width: 145px;
     height: 54px;
     transition: 0.3s all ease;
@@ -279,8 +285,8 @@ header>.container-wrap {
 
 @media (max-width: 1200px) {
     header {
-        height: 57px;
-        max-height: 57px;
+        height: 57px !important;
+        max-height: 57px !important;
     }
 
     .header-phone-mobile-wrap {
@@ -413,8 +419,8 @@ header>.container-wrap {
 @media (max-width: 850px) {
 
     header {
-        height: 89px;
-        max-height: 89px;
+        height: 89px !important;
+        max-height: 89px !important;
     }
 
     .header-wrap {
@@ -431,8 +437,8 @@ header>.container-wrap {
 
 @media (max-width: 385px) {
     header {
-        height: 113px;
-        max-height: 113px;
+        height: 113px !important;
+        max-height: 113px !important;
     }
 
     .header-phone {
