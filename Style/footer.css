@@ -158,9 +158,10 @@ footer {
     justify-content: center;
 }
 
-.footer-second-line .footer-logo img {
-    width: auto;
+.footer-second-line .footer-logo svg {
+    width: 108px;
     height: 40px;
+    fill: #fff;
 }
 
 .footer-second-line  .footer-second-line-text {
