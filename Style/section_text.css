@@ -12,6 +12,8 @@
     line-height: 1.2em;
     text-transform: uppercase;
     font-weight: 300;
+    font-size: 30px;
+    text-align: center;
 }
 
 .separator {
