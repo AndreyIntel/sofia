@@ -1,0 +1,61 @@
+.is-sticky {
+    height: 60px;
+    max-height: 60px;
+}
+
+.is-sticky .header-logo svg {
+    width: 145px;
+    height: 54px;
+    transition: 0.3s all ease;
+}
+
+.nav-menu>li>a:hover {
+    color: #4a3e5a;
+}
+
+.nav-menu>li>a:hover svg {
+    fill: #4a3e5a;
+}
+
+.nav-menu>li:hover>ul,
+.nav-menu>li>ul>li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-menu>li>ul>li,
+.nav-menu>li>ul>li>ul>li {
+    padding: 7px 27px;
+    position: relative;
+}
+
+.nav-menu>li>ul>li a,
+.nav-menu>li>ul>li>ul>li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #808080;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.9;
+}
+
+.nav-menu>li>ul>li:hover>a,
+.nav-menu>li>ul>li:hover>a>span,
+.nav-menu>li>ul>li>ul>li:hover>a,
+.nav-menu>li>ul>li>ul>li:hover>a>span {
+    color: #4a3e5a;
+}
+
+.nav-menu .sub-menu-arrow {
+    position: absolute;
+    right: 17px;
+    font-size: 9px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.mobile-menu-active {
+    overflow: hidden;
+}
