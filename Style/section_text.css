@@ -53,12 +53,17 @@
     color: #808080;
     font-size: 15px;
     width: 100%;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: left;
     line-height: 1.7333em;
     letter-spacing: 0;
+}
+
+.section-text p a {
+    text-decoration: none;
+    color: #4a3e5a;
 }
 
 .blog-headline {
@@ -84,6 +89,10 @@
 
     .main-headline {
         font-size: 18px;
+    }
+
+    .blog-headline {
+        font-size: 16px;
     }
 
     .img-text-wrap img {
