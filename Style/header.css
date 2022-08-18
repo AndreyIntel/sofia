@@ -236,6 +236,14 @@ header>.container-wrap {
     transform: rotate(-90deg);
 }
 
+.section-text {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 /* mobile part */
 
 @media (max-width: 1350px) {
