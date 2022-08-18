@@ -1,0 +1,97 @@
+
+.title-main {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 557px;
+    max-height: 557px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center 0px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.title-main h1 {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    line-height: 1em;
+    vertical-align: middle;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: .07em;
+}
+
+.title-main span {
+    color: #fff;
+    font-size: 23px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    margin-top: 8px;
+    line-height: 1.666666666666667em;
+    font-weight: 300;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media (max-width: 1024px) {
+    .title-main {
+        height: 412px;
+        max-height: 412px;
+    }
+
+    .title-main h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .title-main span {
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .title-main {
+        height: 220px;
+        max-height: 220px;
+    }
+
+    .title-main h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .title-main h1 {
+        font-size: 25px;
+    }
+
+    .title-main span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .title-main {
+        height: 155px;
+        max-height: 155px;
+    }
+
+    .title-main h1 {
+        font-size: 18px;
+    }
+
+    .title-main span {
+        font-size: 12px;
+    }
+}

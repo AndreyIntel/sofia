@@ -103,7 +103,6 @@ footer {
 }
 
 #mymap{
-    background: url("../img/map.webp"); 
     background-size: cover;
     position: relative;
     overflow: hidden;
