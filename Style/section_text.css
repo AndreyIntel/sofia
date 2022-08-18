@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.section-text h2 {
+.main-headline {
     padding-top: 30px;
     color: #4a3e5a;
     line-height: 1.2em;
@@ -49,6 +49,30 @@
     justify-content: center;
 }
 
+.section-text p {
+    color: #808080;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.7333em;
+    letter-spacing: 0;
+}
+
+.blog-headline {
+    font-size: 21px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #4a3e5a;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+
+
 @media (max-width: 800px) {
     .img-text-wrap img {
         width: 580px;
@@ -58,7 +82,7 @@
 
 @media (max-width: 580px) {
 
-    .section-text h2 {
+    .main-headline {
         font-size: 18px;
     }
 
