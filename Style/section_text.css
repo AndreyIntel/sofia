@@ -46,3 +46,22 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 800px) {
+    .img-text-wrap img {
+        width: 580px;
+        height: auto;
+    }
+}
+
+@media (max-width: 580px) {
+    .img-text-wrap img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .img-text-wrap img {
+        width: 300px;
+    }
+}
