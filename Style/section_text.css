@@ -55,6 +55,11 @@
 }
 
 @media (max-width: 580px) {
+
+    .section-text h2 {
+        font-size: 18px;
+    }
+
     .img-text-wrap img {
         width: 400px;
     }
