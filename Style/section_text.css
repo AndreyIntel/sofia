@@ -1,5 +1,6 @@
 
-.main-headline {
+.main-headline,
+.main-headline2  {
     padding-top: 30px;
     color: #4a3e5a;
     line-height: 1.2em;
@@ -7,6 +8,10 @@
     font-weight: 300;
     font-size: 30px;
     text-align: center;
+}
+
+.main-headline2 {
+    font-size: 21px;
 }
 
 .separator-line {
