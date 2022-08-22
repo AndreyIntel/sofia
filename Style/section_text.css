@@ -120,6 +120,7 @@
     gap: 80px;
     justify-content: center;
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .section-text .grid-info>div {
@@ -159,6 +160,109 @@
 
 .grid-info-text p {
     font-size: 15px;
+}
+
+/* 👻 Two colums 👻 */
+.two-colums {
+    position: relative;
+    width: 100%;
+    padding-top: 126px;
+    padding-bottom: 97px;
+    display: flex;
+    justify-content: center;
+    background-color: #d7d4db;
+}
+
+.two-colums-content {
+    position: relative;
+    display: flex;
+}
+
+.two-colums-content>div {
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+}
+
+.two-colums-content h3 {
+    color: #4a3e5a;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.1875em;
+    text-transform: uppercase;
+}
+
+.two-colums-content p {
+    padding: 10px 0;
+    color: #808080;
+    font-size: 15px;
+    line-height: 1.7333em;
+    letter-spacing: 0;
+    font-weight: 300;
+}
+
+.two-colums-content ul {
+    color: #808080;
+    font-size: 15px;
+    line-height: 1.7333em;
+    letter-spacing: 0;
+    list-style-position: inside;
+    font-weight: 300;
+}
+
+
+.two-column-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 11px 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    color: #4a3e5a;
+    border: 1px solid #4a3e5a;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out,background-position .3s ease,opacity .2s ease-out;
+}
+
+.two-column-btn:hover {
+    background-color: #4a3e5a;
+    color: #fff;
+}
+
+.second-column {
+    display: flex;
+    align-items: center;
+}
+
+.second-column img {
+    width: 702px;
+    height: auto;
+}
+
+@media (max-width: 1500px) {
+    .second-column img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .second-column img {
+        display: none;
+    }
+
+    .two-colums-content {
+        flex-wrap: wrap;
+    }
+
+    .two-colums-content>div {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 800px) {
