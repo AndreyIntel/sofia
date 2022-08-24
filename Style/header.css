@@ -21,7 +21,7 @@ main {
     max-width: 1300px; 
 }
 
-header {
+.header-content {
     position: sticky;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@ header {
     transition: all ease .3s;
 }
 
-header>.container-wrap {
+.header-content>.container-wrap {
     height: 100%;
     max-height: 100%;
 }
@@ -256,7 +256,7 @@ header>.container-wrap {
 /* mobile part */
 
 @media (max-width: 1350px) {
-    header .container-wrap {
+    .header-content .container-wrap {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -270,7 +270,7 @@ header>.container-wrap {
 }
 
 @media (max-width: 1200px) {
-    header {
+    .header-content {
         height: 57px !important;
         max-height: 57px !important;
     }
@@ -413,7 +413,7 @@ header>.container-wrap {
 
 @media (max-width: 850px) {
 
-    header {
+    .header-content {
         height: 89px !important;
         max-height: 89px !important;
     }
@@ -431,7 +431,7 @@ header>.container-wrap {
 }
 
 @media (max-width: 385px) {
-    header {
+    .header-content {
         height: 113px !important;
         max-height: 113px !important;
     }
